@@ -1,0 +1,59 @@
+body{
+    background-color: blue;
+}
+#container{
+    background-color: orange;
+    width: 1000px;
+    margin:0 auto;
+}
+header{
+    background-color: black;
+    color: red;
+    border: 4px blue;
+    text-align: center;
+    line-height: 5em;
+}
+header h1 {
+    margin: 0;
+}
+aside{
+    width: 250px;
+    float: left;
+    padding-left: 10px;
+}
+article{
+    width: 700px;
+    float: right;
+}
+footer{
+    background-color: black;
+    color: red;
+    clear: both;
+    padding-left: 10px;
+    text-align: left;
+}
+h2{
+    color: blueviolet;
+}
+h3{
+    color: gray;
+}
+h4 {
+    color:white;
+}
+h2 h3 h4{
+    margin-bottom: 5px;
+}
+input, textarea{
+    display: block;
+    margin: 20px 0;
+}
+form{
+margin-top: 10px;
+}
+.custom-pizza{
+    margin-top: 10px;
+}
+li {
+    margin-top: 10px;
+}
