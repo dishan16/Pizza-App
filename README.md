@@ -1,4 +1,6 @@
 # Pizza-App
+Name: Dishan Gohel
+Student I.D: 101254621
 
 Description!
 PiCo is a pizza company where you can craft your pizza.
