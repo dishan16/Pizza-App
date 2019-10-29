@@ -1,9 +1,10 @@
 var totalPriceArray = [];
 function Order (customSize, cheese) {
+  console.log(2,customSize,cheese);                                                                                                                   
   this.customSize = customSize;
   this.sauce = 1;
   this.cheese = cheese;
-  this.veggie1 = 1;
+  this.veggie1 = 1;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
   this.veggie2 = 1;
   this.meat = 2;
   this.pizzaPrice = 0;
@@ -41,6 +42,7 @@ Order.prototype.finalCost = function () {
       
       $("form#custom-pizza").submit(function(event) {
         event.preventDefault();
+        
         var customSize = $("select#size").val();
         var sauce = $("select#sauce").val();
         var cheese = $("select#cheese").val();
@@ -49,13 +51,25 @@ Order.prototype.finalCost = function () {
         var meat = $("select#meat").val();
         var pizzaDetails = (customSize + " - " + sauce + ", " + cheese + ", " + veggie1 + ", " + veggie2 + ", " + meat);
         var newPizzaOrder = new Order(customSize, cheese);
+        console.log(1,pizzaDetails)
         newPizzaOrder.pizzaCost();
         totalPriceArray.push(newPizzaOrder.pizzaPrice);
         $("#pizza-details-dropdown").show();
         $("#final-cost").text(newPizzaOrder.finalCost());
+        console.log(newPizzaOrder.finalCost());
+        
         $("#pizza-details").append("<ul><li>" + pizzaDetails + "</li></ul>");
         $("#size, #sauce, #cheese, #veggie1, #veggie2, #meat").val("");
       });
       $("#pizza-details-dropdown").click(function() {
         $("#pizza-details").toggle();
+      
+      });
+      $("#checkout-btn").click(function(event) {
+       event.preventDefault();
+        // window.alert(`ok`);
+        // $("#show").on("click", function () {
+          $("#myForm").show();
+        // });
+      
       });
