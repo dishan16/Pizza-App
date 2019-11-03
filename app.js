@@ -67,9 +67,15 @@ Order.prototype.finalCost = function () {
       });
       $("#checkout-btn").click(function(event) {
        event.preventDefault();
-        // window.alert(`ok`);
-        // $("#show").on("click", function () {
-          $("#myForm").show();
-        // });
+       let email = prompt("Enter your email: "); 
+       console.log(email);
+
+       let name = prompt("Enter your name: "); 
+       console.log(name);
+       
+       // // window.alert(`ok`);
+        // // $("#show").on("click", function () {
+        //   $("#myForm").show();
+        // // });
       
       });

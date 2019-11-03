@@ -1,6 +1,16 @@
 body{
     background-color: blue;
 }
+
+#form-container {
+    display: flex;
+}
+
+#price-container {
+    display: flex;
+    justify-content: space-around;
+}
+
 #container{
     background-color: orange;
     width: 1000px;
